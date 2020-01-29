@@ -8,11 +8,12 @@ pays.addEventListener("submit", e => {
   const cardnumber = document.getElementById("cardnumber").value;
   const level = document.getElementById("level").value;
   const amount = document.getElementById("amount").value;
-  const date = new Date();
+  const date = new Date().toDateString();
+  let emailID = sessionStorage.getItem("email");
 
 
   return db
-    .collection("applications")
+    .collection("payments")
     .doc()
     .set({
       name,
@@ -21,9 +22,10 @@ pays.addEventListener("submit", e => {
       cardnumber,
       level,
       amount,
-      date
+      date,
+      emailID
 
-    }, location.href = "invoice.html")
+    }, alert(`Hello ${name}, Congratulation on paying your school fees`))
     .catch(err => {
       console.error(err);
       alert("err : ", err)

@@ -205,8 +205,8 @@
 
                     <div class="container-fluid nav nav-tabs border-bottom mb-3" role="tablist">
                         <a href="#activity_all" class="active" data-toggle="tab" role="tab" aria-controls="activity_all"
-                            aria-selected="true">Overview</a>
-                        <a href="#activity_purchases" data-toggle="tab" role="tab" aria-selected="false">Pricing</a>
+                            aria-selected="true">Payment</a>
+                        <a href="#activity_purchases" data-toggle="tab" role="tab" aria-selected="false">Invoices</a>
                     </div>
                     <div class="container-fluid page__container">
                         <div class="tab-content">
@@ -353,19 +353,7 @@
                                                 <p><strong class="headings-color">Basic Information</strong></p>
 
                                             </div>
-                                            <div class="col-lg-8 card-form__body card-body">
 
-                                                <div class="d-flex align-items-center flex-wrap">
-
-
-
-                                                    <strong>School Fees Invoices</strong>
-
-
-
-                                                </div>
-
-                                            </div>
 
                                         </div>
                                     </div>
@@ -374,118 +362,30 @@
 
                                     <div class="card card-form">
                                         <div class="row no-gutters">
-                                            <div class="col-lg-4 card-body">
+                                            <div class="col-lg-2 card-body">
                                                 <p><strong class="headings-color">Invoices</strong></p>
                                                 <p class="text-muted mb-0">Your past payments</p>
                                             </div>
-                                            <div class="col-lg-8 card-form__body">
+                                            <div class="col-lg-10 card-form__body">
 
                                                 <div class="table-responsive">
                                                     <table class="table mb-0">
                                                         <thead>
                                                             <tr>
-                                                                name,
-                                                                regno,
-                                                                cardholder,
-                                                                cardnumber,
-                                                                level,
-                                                                cvc,
-                                                                date
+
                                                                 <th>Invoice ID</th>
+                                                                <th class="text-center">Reg Number</th>
                                                                 <th class="text-center">Amount</th>
+                                                                <th class="text-center">Level</th>
+
+
                                                                 <th class="text-center">Status</th>
                                                                 <th class="text-center" style="width: 140px;">Date</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="list">
+                                                        <tbody class="list" id="invoice">
 
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="invoice.html">#<span>12199</span></a>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    $49.00
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <div class="badge badge-warning">
-                                                                        DUE
-                                                                    </div>
-                                                                </td>
-                                                                <td>
 
-                                                                    <div class="d-flex align-items-center text-muted">
-                                                                        <i
-                                                                            class="material-icons icon-16pt mr-1">today</i>
-                                                                        25 May 2019
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="invoice.html">#<span>38331</span></a>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    $49.00
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <div class="badge badge-success">
-                                                                        PAID
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-
-                                                                    <div class="d-flex align-items-center text-muted">
-                                                                        <i
-                                                                            class="material-icons icon-16pt mr-1">today</i>
-                                                                        18 Apr 2019
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="invoice.html">#<span>58331</span></a>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    $49.00
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <div class="badge badge-danger">
-                                                                        UNPAID
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-
-                                                                    <div class="d-flex align-items-center text-muted">
-                                                                        <i
-                                                                            class="material-icons icon-16pt mr-1">today</i>
-                                                                        12 Feb 2019
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="invoice.html">#<span>23421</span></a>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    $49.00
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <div class="badge badge-success">
-                                                                        PAID
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-
-                                                                    <div class="d-flex align-items-center text-muted">
-                                                                        <i
-                                                                            class="material-icons icon-16pt mr-1">today</i>
-                                                                        28 Jan 2019
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
 
                                                         </tbody>
                                                     </table>
@@ -645,6 +545,6 @@
 
 <script src="./config/index.js"></script>
 <script src="./scripts/pay.js"></script>
-<script src="./scripts/fees.js"></script>
+<script src="./scripts/invoice.js"></script>
 
 </html>
