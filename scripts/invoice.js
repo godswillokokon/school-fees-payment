@@ -1,0 +1,1 @@
+alert(`Hello ${name}, Congratulation on paying your school fees`);

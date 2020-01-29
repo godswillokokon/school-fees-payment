@@ -7,7 +7,7 @@ pays.addEventListener("submit", e => {
   const cardholder = document.getElementById("cardholder").value;
   const cardnumber = document.getElementById("cardnumber").value;
   const level = document.getElementById("level").value;
-  const cvc = document.getElementById("cvc").value;
+  const amount = document.getElementById("amount").value;
   const date = new Date();
 
 
@@ -20,10 +20,10 @@ pays.addEventListener("submit", e => {
       cardholder,
       cardnumber,
       level,
-      cvc,
+      amount,
       date
 
-    }, alert(`Hello ${name}, Congratulation on paying your school fees`))
+    }, location.href = "invoice.html")
     .catch(err => {
       console.error(err);
       alert("err : ", err)
