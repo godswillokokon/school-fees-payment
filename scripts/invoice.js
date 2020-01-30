@@ -18,7 +18,7 @@ const setupContent = data => {
     const div = `
     <tr>
                                                                 <td>
-                                                                    <a href="">#<span>	 ${id}</span></a>
+                                                                    <a href="./reciept.html?${id}">#<span>	 ${id}</span></a>
                                                                 </td>
                                                                 <td class="text-center">
                                                                     	 ${regno}
