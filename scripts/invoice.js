@@ -12,6 +12,10 @@ const setupContent = data => {
     let level = data.data().level;
     let amount = data.data().amount;
     let date = data.data().date;
+    // let year = date.slice(10, 15);
+    // console.log(date);
+    // console.log(year);
+
 
 
 
@@ -41,6 +45,7 @@ const setupContent = data => {
                                                                         ${date}
                                                                     </div>
                                                                 </td>
+                                                               
                                                                  
                                                             </tr>
 
